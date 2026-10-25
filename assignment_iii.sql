@@ -120,7 +120,6 @@ ADD COLUMN shipping_status VARCHAR(50) DEFAULT 'Pending';
 
 DESCRIBE orders;
 
-SET FOREIGN_KEY_CHECKS = 0;
 
 -- insert a single record
 INSERT INTO products (product_name, category, price, stock_quantity) 
@@ -144,7 +143,7 @@ VALUES (6, 6, '2026-10-24', 2);
 SELECT * FROM orders 
 WHERE order_id = 6;
 
-SET FOREIGN_KEY_CHECKS =1;
+
 
 
 
